@@ -1,0 +1,16 @@
+@import "variables.scss";
+.hello {
+    background-image: url("https://images.unsplash.com/photo-1613985212734-166ffb5a513d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YXV0dW1uJTIwZm9yZXN0fGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+    color: $primary-color;
+    &__img {
+        width: 3.25em;
+        height: auto;
+    }
+    &:hover {
+        color: $secondary-color;
+    }
+    &__h1 {
+        @include headlineColor;
+        font-size: 80px;
+    }
+}
